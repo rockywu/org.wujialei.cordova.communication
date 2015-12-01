@@ -6,7 +6,7 @@
  * @copyright Wujialei Inc
  * @created 2015-07-17
  */
-package org.wujialei.cordova.localfile;
+package org.wujialei.cordova.localajax;
 
 import android.content.Context;
 import android.util.Log;
@@ -18,7 +18,7 @@ import org.apache.cordova.LOG;
 import org.apache.cordova.engine.SystemWebView;
 import org.apache.cordova.engine.SystemWebViewEngine;
 
-public class LocalFilePlugin extends CordovaPlugin {
+public class LocalAjaxPlugin extends CordovaPlugin {
 
     private static final String LOG_TAG = "LocalFilePlugin";
 

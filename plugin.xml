@@ -3,28 +3,25 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="org.wujialei.cordova.localfile"
+    id="org.wujialei.cordova.localajax"
     version="0.1.0">
-    <name>LocalFilePlugin</name>
-    <description>allow loading local files</description>
+    <name>LocalAjaxPlugin</name>
+    <description>the same of browser's request</description>
     <license>wujialei isc</license>
-    <keywords>cordova, localfile</keywords>
-    <repo>https://github.com/rockywu/org.wujialei.cordova.localfile/tree/master</repo>
-    <issue>https://github.com/rockywu/org.wujialei.cordova.localfile/issues</issue>
+    <keywords>cordova, localajax</keywords>
+    <repo>https://github.com/rockywu/org.wujialei.cordova.localajax/tree/master</repo>
+    <issue>https://github.com/rockywu/org.wujialei.cordova.localajax/issues</issue>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="LocalFile" >
-                <param name="android-package" value="org.wujialei.cordova.localfile.LocalFilePlugin" />
-                <param name="onload" value="true" />
+            <feature name="LocalAjax" >
+                <param name="android-package" value="org.wujialei.cordova.localajax.LocalAjaxPlugin" />
             </feature>
         </config-file>
 
-        <source-file src="src/android/LocalFilePlugin.java"
-            target-dir="src/org/wujialei/cordova/localfile" />
-        <source-file src="src/android/LocalFileWebViewClient.java"
-            target-dir="src/org/wujialei/cordova/localfile" />
+        <source-file src="src/android/LocalAjaxPlugin.java"
+            target-dir="src/org/wujialei/cordova/localajax" />
     </platform>
 
 </plugin>

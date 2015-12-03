@@ -1,12 +1,11 @@
 /*
- * 允许跨域加载本地file:///android_asset/www/下的文件
  * 
  * @author rockywu
  * @email wjl19890427@hotmail.com
  * @copyright Wujialei Inc
  * @created 2015-07-17
  */
-package org.wujialei.cordova.localajax;
+package org.wujialei.cordova.datacommunication;
 
 import android.content.Context;
 import android.util.Log;
@@ -18,7 +17,7 @@ import org.apache.cordova.LOG;
 import org.apache.cordova.engine.SystemWebView;
 import org.apache.cordova.engine.SystemWebViewEngine;
 
-public class LocalAjaxPlugin extends CordovaPlugin {
+public class DataCommunicationPlugin extends CordovaPlugin {
 
     private static final String LOG_TAG = "LocalFilePlugin";
 

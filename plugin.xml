@@ -3,25 +3,26 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="org.wujialei.cordova.localajax"
+    id="org.wujialei.cordova.datacommunication"
     version="0.1.0">
-    <name>LocalAjaxPlugin</name>
+    <name>DataCommunicationPlugin</name>
     <description>the same of browser's request</description>
     <license>wujialei isc</license>
-    <keywords>cordova, localajax</keywords>
-    <repo>https://github.com/rockywu/org.wujialei.cordova.localajax/tree/master</repo>
-    <issue>https://github.com/rockywu/org.wujialei.cordova.localajax/issues</issue>
+    <keywords>cordova, data communication</keywords>
+    <repo>https://github.com/rockywu/org.wujialei.cordova.datacommunication/tree/master</repo>
+    <issue>https://github.com/rockywu/org.wujialei.cordova.datacommunication/issues</issue>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="LocalAjax" >
-                <param name="android-package" value="org.wujialei.cordova.localajax.LocalAjaxPlugin" />
+                <param name="android-package" 
+                    value="org.wujialei.cordova.datacommunication.DataCommunicationPlugin" />
             </feature>
         </config-file>
 
-        <source-file src="src/android/LocalAjaxPlugin.java"
-            target-dir="src/org/wujialei/cordova/localajax" />
+        <source-file src="src/android/DataCommunicationPlugin.java"
+            target-dir="src/org/wujialei/cordova/datacommunication" />
     </platform>
 
 </plugin>

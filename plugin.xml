@@ -3,26 +3,28 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="org.wujialei.cordova.datacommunication"
+    id="org.wujialei.cordova.communication"
     version="0.1.0">
-    <name>DataCommunicationPlugin</name>
+    <name>CommunicationPlugin</name>
     <description>the same of browser's request</description>
     <license>wujialei isc</license>
     <keywords>cordova, data communication</keywords>
-    <repo>https://github.com/rockywu/org.wujialei.cordova.datacommunication/tree/master</repo>
-    <issue>https://github.com/rockywu/org.wujialei.cordova.datacommunication/issues</issue>
+    <repo>https://github.com/rockywu/org.wujialei.cordova.communication/tree/master</repo>
+    <issue>https://github.com/rockywu/org.wujialei.cordova.communication/issues</issue>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="LocalAjax" >
+            <feature name="Communication" >
                 <param name="android-package" 
-                    value="org.wujialei.cordova.datacommunication.DataCommunicationPlugin" />
+                    value="org.wujialei.cordova.communication.CommunicationPlugin" />
             </feature>
         </config-file>
 
-        <source-file src="src/android/DataCommunicationPlugin.java"
-            target-dir="src/org/wujialei/cordova/datacommunication" />
+        <source-file src="src/android/CommunicationPlugin.java"
+            target-dir="src/org/wujialei/cordova/communication" />
+        <source-file src="libs/volley.jar"
+            target-dir="libs/volley.jar" />
     </platform>
 
 </plugin>

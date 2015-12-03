@@ -5,7 +5,7 @@
  * @copyright Wujialei Inc
  * @created 2015-07-17
  */
-package org.wujialei.cordova.datacommunication;
+package org.wujialei.cordova.communication;
 
 import android.content.Context;
 import android.util.Log;
@@ -17,7 +17,7 @@ import org.apache.cordova.LOG;
 import org.apache.cordova.engine.SystemWebView;
 import org.apache.cordova.engine.SystemWebViewEngine;
 
-public class DataCommunicationPlugin extends CordovaPlugin {
+public class CommunicationPlugin extends CordovaPlugin {
 
     private static final String LOG_TAG = "LocalFilePlugin";
 

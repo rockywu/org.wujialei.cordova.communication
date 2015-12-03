@@ -1,20 +1,20 @@
 {
-  "name": "org.wujialei.cordova.localfile",
+  "name": "org.wujialei.cordova.communication",
   "version": "0.1.0",
-  "description": "cordova wujialei allow local file",
+  "description": "cordova , the same of browser's ajax request",
   "cordova": {
-    "id": "org.wujialei.cordova.localfile",
+    "id": "org.wujialei.cordova.communication",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rockywu/org.wujialei.cordova.localfile.git"
+    "url": "https://github.com/rockywu/org.wujialei.cordova.communication.git"
   },
   "keywords": [
     "cordova",
-    "localfile"
+    "communication"
   ],
   "author": "rockywu",
   "email" : "wjl19890427@hotmail.com",

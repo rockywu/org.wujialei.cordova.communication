@@ -13,7 +13,7 @@
     <issue>https://github.com/rockywu/org.wujialei.cordova.communication/issues</issue>
 
     <js-module src="www/Communication.js" name="Communication">
-        <clobbers target="Communication" />
+        <clobbers target="window.Communication" />
     </js-module>
     <!-- android -->
     <platform name="android">

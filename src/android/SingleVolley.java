@@ -7,9 +7,6 @@ import com.android.volley.Response;
 import com.android.volley.Response.Listener;
 import com.android.volley.Response.ErrorListener;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by rocky on 15-12-4.
  */

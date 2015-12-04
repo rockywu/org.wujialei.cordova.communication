@@ -14,9 +14,9 @@ Communication.prototype.ajax = function(config) {
         "ajax",
         [
             config.url || window.location.href,
-            config.data || {},
             config.type || 'GET',
             config.dataType || "json",
+            config.data || {}
         ]
     );
 }

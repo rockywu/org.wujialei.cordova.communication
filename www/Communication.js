@@ -6,16 +6,18 @@
  */
 var exec = require("cordova/exec");
 
-function FxTools() {
-
+function Communication() {}
+Communication.prototype.ajax = function(config) {
+    exec(config.success || function() {},
+        config.error || function() {},
+        "Communication",
+        "ajax",
+        [
+            config.url || window.location.href,
+            config.data || {},
+            config.type || 'GET',
+            config.dataType || "json",
+        ]
+    );
 }
-FxTools.prototype.deviceRegister = function(userId, cityId, successCallback, errorCallback) {
-    exec(successCallback, errorCallback, "FxTools", "deviceRegister", [userId, cityId]);
-}
-FxTools.prototype.networkReload = function(bool, successCallback, errorCallback) {
-    exec(successCallback, errorCallback, "FxTools", "networkReload", [bool]);
-}
-FxTools.prototype.displayMessage = function(message, successCallback, errorCallback) {
-    exec(successCallback, errorCallback, "FxTools", "displayMessage", [message]);
-}
-module.exports = new FxTools();
+module.exports = new Communication();

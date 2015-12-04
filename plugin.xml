@@ -26,6 +26,16 @@
 
         <source-file src="src/android/CommunicationPlugin.java"
             target-dir="src/org/wujialei/cordova/communication" />
+
+        <source-file src="src/android/SingleVolley.java"
+            target-dir="src/org/wujialei/cordova/communication" />
+
+        <source-file src="src/android/VolleyConfigImpl.java"
+            target-dir="src/org/wujialei/cordova/communication" />
+
+        <source-file src="src/android/VolleyConfigInterface.java"
+            target-dir="src/org/wujialei/cordova/communication" />
+
         <source-file src="libs/volley.jar"
             target-dir="libs" />
     </platform>

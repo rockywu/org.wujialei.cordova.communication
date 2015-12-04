@@ -12,6 +12,9 @@
     <repo>https://github.com/rockywu/org.wujialei.cordova.communication/tree/master</repo>
     <issue>https://github.com/rockywu/org.wujialei.cordova.communication/issues</issue>
 
+    <js-module src="www/Communication.js" name="Communication">
+        <clobbers target="Communication" />
+    </js-module>
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">

@@ -21,3 +21,4 @@ Communication.prototype.ajax = function(config) {
     );
 }
 module.exports = new Communication();
+
